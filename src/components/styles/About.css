@@ -69,3 +69,73 @@
     line-height: 2.7rem;
   }
 }
+
+/* Highlights row */
+.about-highlights {
+  display: flex;
+  gap: 32px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.about-highlight-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.highlight-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accentColor);
+  line-height: 1;
+}
+
+.highlight-label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+/* Skill tags */
+.about-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.about-skill-tag {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.05);
+  white-space: nowrap;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.about-skill-tag:hover {
+  border-color: var(--accentColor);
+  color: var(--accentColor);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+@media only screen and (min-width: 1025px) {
+  .highlight-number {
+    font-size: 2.4vw;
+  }
+  .highlight-label {
+    font-size: 0.7vw;
+  }
+  .about-skill-tag {
+    font-size: 0.65vw;
+  }
+}
